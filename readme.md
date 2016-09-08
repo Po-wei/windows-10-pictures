@@ -1,4 +1,4 @@
-#Windows 10 spotlight pcitrues
+#Windows 10 spotlight pictures
 get fullHD pictures from Windows spotlight!
 
 #How to build
