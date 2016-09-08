@@ -28,7 +28,6 @@ int main()
 	string dest = "C:\\Users\\"+UserName+"\\Desktop\\picture";
 	mkdir(dest.c_str());
 	
-	
 	if((pic_dir = opendir(source.c_str())) == NULL )
 	{
 		cout << "Cannot find pictures in Windows Spotlight." << endl ;
@@ -50,10 +49,6 @@ int main()
 	fop.pFrom = _T(from.c_str());
 	SHFileOperation(&fop);
 	
-	
-//	CopyFile( source.c_str(), dest.c_str(), FALSE );
-	
-	
 	while((dirp = readdir(dest_dir)) != NULL )
 	{
 		files.push_back(string(dirp->d_name));
@@ -69,8 +64,9 @@ int main()
 		rename(oldname.c_str(),newname);       	
     }
     
-    cout << "\n已複製完成" << endl; 
-    cout << "要重新執行前，先刪除picture 資料夾。" << endl; 
+    cout << "\n已在桌面建立資料夾picture" << endl ;
+    cout << "複製完成......" << endl; 
+    cout << "\n要重新執行前，先刪除picture 資料夾。" << endl; 
     cout << "按任意建結束......" << endl ; 
     cin.get();
 }
