@@ -1,5 +1,6 @@
 #Windows 10 spotlight pictures
  get fullHD pictures from Windows spotlight!
+ 
  每次打開電腦 解鎖畫面的圖片總是很漂亮
  如果能拿來做桌布，或是純粹來欣賞一定很不錯，在網路上找找資料後寫了一個C++ 小程式
  執行後會在桌面上看到一個picture資料夾
@@ -7,8 +8,8 @@
 
 #How to build
 * requirement:
-** bulid in the windows 10 environment.
-** use C++11 standard. ex: std=c++11
+ * bulid in the windows 10 environment.
+ * use C++11 standard. ex: std=c++11
 
 #Notice
  before you re-execute the program you should delete the original folder first!
